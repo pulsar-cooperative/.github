@@ -1,0 +1,30 @@
+name: Release New Version
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'main'
+      - 'master'
+env:
+  PPR_AUTH: ${{ secrets.PPR_AUTH }}
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout the Latest Package Code
+        uses: actions/checkout@v3
+      - name: Get Version
+        id: version
+        run: node -p "require('./package.json').version" >> "$GITHUB_OUTPUT"
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.version.outputs }}
+      - name: Publish Version to PPR
+        run: curl -X POST -H "Authorization: $PPR_AUTH" https://api.pulsar-edit.dev/api/packages/${{ github.event.repository.name }}/versions
