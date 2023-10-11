@@ -27,4 +27,6 @@ jobs:
         with:
           tag_name: ${{ steps.version.outputs }}
       - name: Publish Version to PPR
-        run: curl -X POST -H "Authorization: $PPR_AUTH" https://api.pulsar-edit.dev/api/packages/${{ github.event.repository.name }}/versions
+        if: ${{ secrets.PUBLISHED == 'true' }}
+        run: |
+          curl -X POST -H "Authorization: $PPR_AUTH" https://api.pulsar-edit.dev/api/packages/${{ github.event.repository.name }}/versions

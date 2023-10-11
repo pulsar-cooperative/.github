@@ -1,0 +1,32 @@
+name: Publish Package for the First Time
+
+on:
+  workflow_dispatch:
+
+env:
+  PPR_AUTH: ${{ secrets.PPR_AUTH }}
+
+jobs:
+  publish:
+    name: Publish
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    # We need to have at least one tag available prior to publication. So we will publish the first release
+    # during publication.
+    - name: Checkout the Latest Package Code
+      uses: actions/checkout@v3
+    - name: Get Version
+      id: version
+      run: node -p "require('./package.json').version" >> "$GITHUB_OUTPUT"
+    - name: Create GitHub Release
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: ${{ steps.version.outputs }}
+    # Now this is what's needed to actually publish the package to PPR
+    - name: Publish Package to PPR
+      if: ${{ secrets.PUBLISHED != 'true' }}
+      run: |
+        curl -X POST -H "Authorization: $PPR_AUTH" https://api.pulsar-edit.dev/api/packages?repository=${{ github.repository }}
