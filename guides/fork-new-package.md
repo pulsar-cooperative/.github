@@ -3,7 +3,7 @@
 This documentation details the criteria that should be used for determining if an existing package should be forked into the `pulsar-cooperative` organization.
 
 While making these choices, be very mindful of the reason this org exists:
-This org is intended to allow a package to continue it's useful lifespan after such a time that it would be impossible to do so otherwise. To make sure users and contributors have a place to report issues with a package where they will be heard, and have a place to make contributions to a package where they will be reviewed.
+This org is intended to allow a package to continue its useful lifespan in the event that it is no longer maintained or updated by its original authors. It will provide a place to make sure users and contributors are able to report issues with a package and be heard. It will allow people to make contributions to a package where they will be reviewed.
 
 Bearing this in mind, below are the loose guidelines that should be followed and considered when forking a community package:
 
