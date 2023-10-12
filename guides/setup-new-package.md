@@ -15,7 +15,7 @@ This setup relates to settings that must be changed on the repository itself, vi
   - `PPR_AUTH`: This should be a Pulsar Package Registry API key, that allows access to the PPR under this organizations name.
   - `PUBLISHED`: This is a value that represents a boolean (Although it's still just text) that determines if the package has been published to the PPR already. Using this allows us to ensure that automatic version updates aren't done prior to the package being ready, and ensures we don't accidentally try to publish it twice. Prior to the package being published ensure to set it to `false` and once it's been published for the first time set it to `true` (Match the case!).
 
-* You'll then want to ensure to add `pulsar-package` to the package's 'topic's to help make this package discoverable on GitHub.
+* You'll then want to ensure to add `pulsar-package` to the package's 'topic's on the GitHub UI to help make this package more discoverable.
 
 ### Configuring Repository Files
 
