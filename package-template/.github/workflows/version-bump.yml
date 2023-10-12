@@ -15,9 +15,9 @@ jobs:
       pull-requests: write
     steps:
     - name: Bump Version
-      if: ${{ secrets.PUBLISHED == 'true' }}
+      if: ${{ vars.PUBLISHED == 'true' }}
       uses: google-github-actions/release-please-action@v3
       with:
         release-type: node
-        package-name: <YOUR_PACKAGE_NAME_HERE>
+        package-name: ${{ vars.REPO_NAME }}
         token: ${{ secrets.GITHUB_TOKEN }}

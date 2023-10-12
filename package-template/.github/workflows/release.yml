@@ -3,9 +3,6 @@ name: Release New Version
 on:
   workflow_dispatch:
 
-env:
-  PPR_AUTH: ${{ secrets.PPR_AUTH }}
-
 jobs:
   release:
     name: Release
@@ -13,6 +10,8 @@ jobs:
 
     steps:
       - name: Publish Version to PPR
-        if: ${{ secrets.PUBLISHED == 'true' }}
+        if: ${{ vars.PUBLISHED == 'true' }}
         run: |
-          curl -X POST -H "Authorization: $PPR_AUTH" https://api.pulsar-edit.dev/api/packages/${{ github.event.repository.name }}/versions
+          curl -X POST \
+            -H "Authorization: ${{ secrets.PPR_AUTH }}" \
+            https://api.pulsar-edit.dev/api/packages/${{ github.event.repository.name }}/versions
