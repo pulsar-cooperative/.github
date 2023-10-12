@@ -10,7 +10,7 @@ With our goals stated, lets get to it, with the first template provided being be
 
 ---
 
-<!-- Pulsar Cooperative Package Repository Template -->
+<!-- Pulsar Cooperative Package Repository Template, place at the top of the orignal README -->
 
 # Pulsar Cooperative
 
