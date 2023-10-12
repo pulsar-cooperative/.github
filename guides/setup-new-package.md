@@ -2,6 +2,12 @@
 
 This guide will walk you through the steps needed to configure and setup a brand new forked package on Pulsar Cooperative.
 
+## Renaming the Package/Repository
+
+Since the original name of the package is reserved on the Pulsar Package Registry, it will need to be renamed, both within the `package.json` as well as the repository name itself (While the name doesn't have to change, it's best practice to keep these names in sync).
+
+When renaming the package the loose convention would be to reuse the original package name, but adding `-pulsar` to the end, such as `[original-name]-pulsar` or `language-cobol-pulsar`.
+
 ## Configuring the Repository
 
 This repository has several helpful template resources to aide in the initial setup, these resources are available within `./package-template` and show the text that should be added to a package's readme, as well as many of the actions that will be needed.
@@ -26,3 +32,9 @@ From here, you'll want to match the template files as closely as possible.
 Copying over the workflows, and adding the text from the readme.
 
 And important note about these workflow files: the template contains a `test.yml` that is used to run automatic tests on the package during every single PR. The package being forked may already have workflow files to do this, so you'll need to investigate every single workflow file already present to determine if they need to be kept, or modified to work on this new org. Some packages may use a different testing scheme, which means we can't use the template one, so make sure to take a close look. It may be wise to look at any other workflow files, if they are present, to make sure everything is accounted for.
+
+## Broadcasting this New Package
+
+Now that the repository is fully setup, and ready for the community to contribute, we need to ensure the community is aware of this new package. The best way to do so is by adding a `badge` to the original package, that recommends installation of this new one.
+
+To get the badge added to the original package, it's best to create a new issue on the [`pulsar-edit/package-backend`](https://github.com/pulsar-edit/package-backend) repository, asking for the new badge to be created. This issue will need to detail the original package name, and the new package name, with links to both.
