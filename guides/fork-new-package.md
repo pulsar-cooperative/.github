@@ -14,5 +14,5 @@ Bearing this in mind, below are the loose guidelines that should be followed and
 
 Lastly some points of knowledge that should be considered:
 
-* Packages from the original `atom` organization, or in some cases labeled as `atom-archived` generally would get an immediate greenlight to fork. Although it should first be checked if these packages already exist on the `pulsar-edit` repo, considering if they have been archived there.
+* Packages from the original `atom` organization, or in some cases labeled as `atom-archived`, generally would get an immediate greenlight to fork. Although it should first be checked if these packages already exist on the `pulsar-edit` repo, considering if they have been archived there.
 * Packages from the `AtomLinter` and `Atom-Community` organization are generally an immediate greenlight to fork.
