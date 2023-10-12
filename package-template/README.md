@@ -4,7 +4,7 @@ The files in this folder should be used as a loose to strict structure of new fi
 
 * Give proper attribution to the original maintainer of the forked package
 * Specify the level of support, and the expected method of interaction with the repository
-* The GitHub Actions to add to the forked repo to ensure a hands off approach is possible.
+* The GitHub Action workflows to add to the forked repo to ensure a hands off approach is possible.
 
 With our goals stated, lets get to it, with the first template provided being below:
 
