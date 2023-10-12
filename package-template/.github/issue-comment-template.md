@@ -1,8 +1,6 @@
 # Welcome to Pulsar Cooperative: {{ .repo }}!
 
-Thanks a ton [{{ .user }}]({{ .userLink }}) for creating this issue!
-
-We can't understate how important, and appreciated it is to contribute!
+Thanks a ton [{{ .user }}]({{ .userLink }}) for creating this issue! We can't understate how important and appreciated it is for your contribution!
 
 But it's important to be clear about the level of support that may be expected here.
 
