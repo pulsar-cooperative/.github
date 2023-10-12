@@ -24,7 +24,7 @@ jobs:
     - name: Create GitHub Release
       uses: softprops/action-gh-release@v1
       with:
-        tag_name: ${{ steps.version.outputs }}
+        tag_name: ${{ steps.version.outputs.version }}
     # Now this is what's needed to actually publish the package to PPR
     - name: Publish Package to PPR
       if: ${{ secrets.PUBLISHED != 'true' }}
