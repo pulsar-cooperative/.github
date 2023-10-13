@@ -27,9 +27,7 @@ This setup relates to settings that must be changed on the repository itself, vi
 
 ### Configuring Repository Files
 
-From here, you'll want to match the template files as closely as possible.
-
-Copying over the workflows, and adding the text from the readme.
+From here, you'll want to match the template files as closely as possible. You will need to copy the workflows and add the text from the readme template to the package readme.
 
 An important note about these workflow files: the template contains a `test.yml` that is used to run automatic tests on the package during every single PR. The package being forked may already have workflow files to do this, so you'll need to investigate every single workflow file already present to determine if they need to be kept, or modified, to work on this new org. Some packages may use a different testing scheme, which means we can't use the template one, so make sure to take a close look. It may be wise to look at any other workflow files, if they are present, to make sure everything is accounted for.
 
