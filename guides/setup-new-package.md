@@ -23,7 +23,7 @@ This setup relates to settings that must be changed on the repository itself, vi
   - `REPO_NAME`: This value **must** be created manually, and should be the repository's name, which should match the name used on the Pulsar Package Registry.
   - `GITHUB_REPO_TOKEN`: This should be set at the organization level, and does not need to be set per repository. This should be a GitHub access token with `repo` scope, so that it can modify repository variables as needed.
 
-* You'll then want to ensure to add `pulsar-package` to the package's 'topic's on the GitHub UI to help make this package more discoverable.
+* You'll then want to ensure to add `pulsar-package` to the package's "topic's" on the GitHub UI to help make this package more discoverable.
 
 ### Configuring Repository Files
 
