@@ -1,6 +1,6 @@
 # Publishing New Versions
 
-The process to publish a new package version is one that tries to find the middle ground between a hands on approach, and automation. Tending to not lean to heavily into automation.
+The process of publishing a new package version is one that tries to find the middle ground between a hands on approach and automation, tending to not lean too heavily into automation.
 
 The general workflow of publishing a new version will look like this.
 
