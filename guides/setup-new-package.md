@@ -4,7 +4,7 @@ This guide will walk you through the steps needed to configure and setup a brand
 
 ## Renaming the Package/Repository
 
-Since the original name of the package is reserved on the Pulsar Package Registry, it will need to be renamed, both within the `package.json` as well as the repository name itself (While the name doesn't have to change, it's best practice to keep these names in sync).
+Since the original name of the package is reserved on the Pulsar Package Registry, it will need to be renamed, both within the `package.json` as well as the repository name itself (while the name doesn't have to change, it's best practice to keep these names in sync).
 
 When renaming the package the loose convention would be to reuse the original package name, but adding `-pulsar` to the end, such as `[original-name]-pulsar` or `language-cobol-pulsar`.
 
