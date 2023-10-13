@@ -6,7 +6,7 @@ The files in this folder should be used as a loose to strict structure of new fi
 * Specify the level of support, and the expected method of interaction with the repository
 * The GitHub Action workflows to add to the forked repo to ensure a hands off approach is possible.
 
-With our goals stated, lets get to it, with the first template provided being below:
+With our goals stated, let's get to it, with the first template provided being below:
 
 ---
 
