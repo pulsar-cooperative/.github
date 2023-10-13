@@ -2,7 +2,7 @@
 
 The process of publishing a new package version is one that tries to find the middle ground between a hands on approach and automation, tending to not lean too heavily into automation.
 
-The general workflow of publishing a new version will look like this.
+The general workflow of publishing a new version looks like this.
 
 Keeping in mind that it's assumed at this point, the initial new package has already been published, and the GitHub Secret `PUBLISHED` has been set to `true` (**Match the case!**)
 
