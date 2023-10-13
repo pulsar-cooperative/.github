@@ -18,7 +18,7 @@ This package was originally created by <ORIGINAL_AUTHORS_NAME> and has now been 
 
 By forking this package we hope to allow new maintainers to work on this package as needed, without being limited by its previous [archived/unmaintained] status, helping to ensure this package stays up to date and functional for as long as possible without the huge responsibility implied by forking and maintaining this under a personal account.
 
-Maintenance of this package is, as the name suggests, a cooperative, with little oversight or assistance from the core Pulsar team. This means any issues filed should be answered and resolved by fellow members of the community, but more details are available on the [`pulsar-cooperative` Contributing Guide](https://github.com/pulsar-cooperative/.github/blob/main/CONTRIBUTING.md).
+Maintenance of this package is, as the name suggests, cooperative, with little oversight or assistance from the core Pulsar team. This means any issues filed should be answered and resolved by fellow members of the community. More details are available on the [`pulsar-cooperative` Contributing Guide](https://github.com/pulsar-cooperative/.github/blob/main/CONTRIBUTING.md).
 
 Thanks a ton for contributing, and the Pulsar team hopes to see you among the stars!
 
