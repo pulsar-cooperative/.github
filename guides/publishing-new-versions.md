@@ -12,5 +12,5 @@ Keeping in mind that it's assumed at this point that the initial new package has
 4. Manually run the workflow `release.yml` to trigger the publication of a new package version to PPR.
 5. You're done! As you can see the total process to publish a new version, including the initial contributors PR boils down to:
 
-* Merge 2 PRs (the original contributors, and the one created by `release-please`)
+* Merge 2 PRs (the original contributor's, and the one created by `release-please`)
 * Manually trigger 1 workflow, to publish the package.
