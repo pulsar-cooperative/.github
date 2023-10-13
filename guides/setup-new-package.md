@@ -16,7 +16,7 @@ This repository has several helpful template resources to aide in the initial se
 
 This setup relates to settings that must be changed on the repository itself, via the GitHub website.
 
-* Add the following values to the repositories secrets/variables:
+* Add the following values to the repository's secrets/variables:
 
   - `PPR_AUTH`: This should be set at the organization level, and does not need to be set per repository. But this should be a Pulsar Package Registry API key, that allows access to the PPR under this organizations name.
   - `PUBLISHED`: This is a value that represents a boolean (Although it's still just text) that determines if the package has been published to the PPR already. Using this allows us to ensure that automatic version updates arne't done prior to the package being ready, and ensures we don't accidentally try to publish it twice. Prior to the package being published. Don't set this value manually, as it's lack of existance works just as well as creating it manually and setting it to `false`. Otherwise the `publish.yml` GitHub workflow will create this variable as `true` once run.
