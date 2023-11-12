@@ -16,6 +16,6 @@ With our goals stated, let's get to it, with the first template provided being b
 > This package was originally created by <ORIGINAL_AUTHORS_NAME> and has now been forked under the [`pulsar-cooperative`](https://github.com/pulsar-cooperative) organization.
 > By forking this package we hope to allow new maintainers to work on this package as needed, without being limited by its previous [archived/unmaintained] status, helping to ensure this package stays up to date and functional for as long as possible without the huge responsibility implied by forking and maintaining this under a personal account.
 >
-> For more info on the Pulsar Cooperative initiative please read [the documentation](https://github.com/pulsar-cooperative/.github/blob/main/README.md).
+> For more info on the Pulsar Cooperative initiative please read [the documentation](https://github.com/pulsar-cooperative/.github/blob/main/CONTRIBUTING.md).
 
 <!-- Original Readme to follow -->
