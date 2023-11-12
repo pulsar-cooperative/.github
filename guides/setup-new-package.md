@@ -6,11 +6,13 @@ This guide will walk you through the steps needed to configure and setup a brand
 
 Since the original name of the package is reserved on the Pulsar Package Registry, it will need to be renamed, both within the `package.json` as well as the repository name itself (while the name doesn't have to change, it's best practice to keep these names in sync).
 
-When renaming the package the loose convention would be to reuse the original package name, but adding `-pulsar` to the end, such as `[original-name]-pulsar` e.g. `language-cobol-pulsar`.
+When renaming the package the loose convention would be to reuse the original package name, but adding `-pulsar` to the end, such as `[original-name]-pulsar` e.g. `language-cobol-pulsar`. Alternatively, many packages have `atom` in the name of the package, this could also be changed to just `pulsar`, such as `atom-ternjs` => `pulsar-ternjs`.
 
 ## Configuring the Repository
 
 This repository has several helpful template resources to aide in the initial setup, these resources are available within `./package-template` and show the text that should be added to a package's readme, as well as many of the actions that will be needed.
+
+You'll also want to ensure that `Issues` are enabled for this new repository.
 
 ### Configuring Repository Settings
 
@@ -21,7 +23,7 @@ This setup relates to settings that must be changed on the repository itself, vi
   - `PPR_AUTH`: This should be set at the organization level, and does not need to be set per repository. This should be a Pulsar Package Registry API key, that allows access to the PPR under this organizations name.
   - `PUBLISHED`: This is a value that represents a boolean (although it's still just text) that determines if the package has been published to the PPR already. Using this allows us to ensure that automatic version updates aren't done prior to the package being ready, and ensures we don't accidentally try to publish it twice. This value should not be set manually prior to the package being published, as its lack of existence works just as well as creating it manually and setting it to `false`. Otherwise the `publish.yml` GitHub workflow will create this variable as `true` once run.
   - `REPO_NAME`: This value **must** be created manually, and should be the repository's name, which should match the name used on the Pulsar Package Registry.
-  - `GITHUB_REPO_TOKEN`: This should be set at the organization level, and does not need to be set per repository. This should be a GitHub access token with `repo` scope, so that it can modify repository variables as needed.
+  - `REPO_TOKEN`: This should be set at the organization level, and does not need to be set per repository. This should be a GitHub access token with `repo` scope, so that it can modify repository variables as needed.
 
 * You'll then want to ensure to add `pulsar-package` to the package's "topic's" on the GitHub UI to help make this package more discoverable.
 
