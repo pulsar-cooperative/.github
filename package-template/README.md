@@ -10,18 +10,12 @@ With our goals stated, let's get to it, with the first template provided being b
 
 ---
 
-<!-- Pulsar Cooperative Package Repository Template, place at the top of the orignal README -->
+<!-- Pulsar Cooperative Package Repository Template, place underneath the first h1 heading in the original readme -->
 
-# Pulsar Cooperative
-
-This package was originally created by <ORIGINAL_AUTHORS_NAME> and has now been forked under the [`pulsar-cooperative`](https://github.com/pulsar-cooperative) organization.
-
-By forking this package we hope to allow new maintainers to work on this package as needed, without being limited by its previous [archived/unmaintained] status, helping to ensure this package stays up to date and functional for as long as possible without the huge responsibility implied by forking and maintaining this under a personal account.
-
-Maintenance of this package is, as the name suggests, cooperative, with little oversight or assistance from the core Pulsar team. This means any issues filed should be answered and resolved by fellow members of the community. More details are available on the [`pulsar-cooperative` Contributing Guide](https://github.com/pulsar-cooperative/.github/blob/main/CONTRIBUTING.md).
-
-Thanks a ton for contributing, and the Pulsar team hopes to see you among the stars!
-
----
+> [!NOTE]
+> This package was originally created by <ORIGINAL_AUTHORS_NAME> and has now been forked under the [`pulsar-cooperative`](https://github.com/pulsar-cooperative) organization.
+> By forking this package we hope to allow new maintainers to work on this package as needed, without being limited by its previous [archived/unmaintained] status, helping to ensure this package stays up to date and functional for as long as possible without the huge responsibility implied by forking and maintaining this under a personal account.
+>
+> For more info on the Pulsar Cooperative initiative please read [the documentation](https://github.com/pulsar-cooperative/.github/blob/main/README.md).
 
 <!-- Original Readme to follow -->
