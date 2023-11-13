@@ -33,6 +33,10 @@ From here, you'll want to match the template files as closely as possible. You w
 
 An important note about these workflow files: the template contains a `test.yml` that is used to run automatic tests on the package during every single PR. The package being forked may already have workflow files to do this, so you'll need to investigate every single workflow file already present to determine if they need to be kept, or modified, to work on this new org. Some packages may use a different testing scheme, which means we can't use the template one, so make sure to take a close look. It may be wise to look at any other workflow files, if they are present, to make sure everything is accounted for.
 
+## Publish this New Package
+
+Once all changes are merged into the package's repository, ensure to manually run the `publish.yaml` or `Publish Package for the First Time` workflow.
+
 ## Broadcasting this New Package
 
 Now that the repository is fully setup, and ready for the community to contribute, we need to ensure the community is aware of this new package. The best way to do so is by adding a `badge` to the original package, that recommends installation of this new one.
