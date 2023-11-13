@@ -36,7 +36,7 @@ As for developers that understand the support that should be expected, it's impo
 
 ### Who can Contribute
 
-Anyone! If you have a fondness for a particular package, feel free to turn on notifications and keep an eye on any reported issues, this way you can always try and ensure it functions to it's best ability. Otherwise feel free to browse for any [Good First Issue](TBD) issues listed across the org, to see where you can start helping out for a particular package.
+Anyone! If you have a fondness for a particular package, feel free to turn on notifications and keep an eye on any reported issues, this way you can always try and ensure it functions to it's best ability. Otherwise feel free to browse for any [Good First Issue](https://github.com/pulls?q=is%3Aopen+user%3Apulsar-cooperative+archived%3Afalse+sort%3Acomments-asc+label%3A%22good+first+issue%22) issues listed across the org, to see where you can start helping out for a particular package.
 
 It's important to also mention that contributing doesn't just mean code fixes, triage is very valuable as well, simply detailing where an error occurs in the code, and leaving someone else to think of a solution.
 
